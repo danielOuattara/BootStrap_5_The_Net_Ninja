@@ -273,8 +273,6 @@
         </div>
     </section>
 
-
-
     <!-- contact form -->
     <section id="contact">
         <div class="container-lg">
@@ -285,23 +283,48 @@
 
             <div class="row justify-content-center my-5">
                 <div class="col-lg-6">
-                    <form action="">
+                    <form >
                         <label for="email" class="form-label"> Email :</label>
-                        <input type="email" class="form-control" id="email" name="email"placeholder="eg: mario@email.com">
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-at"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="eg: mario@email.com">
+                        </div>
                     
                         <label for="name" class="form-label"> Name :</label>
-                        <input type="text" class="form-control" id="name" name="name"placeholder="Danny Boy">
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Danny Boy">
+                        </div>
+
 
                         <label for="subject" class="form-label"> What is your question about ?</label>
-                        <select classe="form-control" id="subject">
-                            <option value="" selected>Select one option</option>
-                            <option value="pricing">Pricing query</option>
-                            <option value="content">Content query</option>
-                            <option value="other">Other query</option>
-                         </select>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <select class="form-select" id="subject">
+                                <option value="" selected>Select one option</option>
+                                <option value="pricing">Pricing query</option>
+                                <option value="content">Content query</option>
+                                <option value="other">Other query</option>
+                             </select>
+                        </div>
 
-                        <label for="querry" class="form-label"> your querry :</label>
-                        <textarea name="querry" id="querry" class="form-control"></textarea>
+                        
+
+                         <div class="form-floating mb-4 mt-5">
+                             <textarea name="query" id="query" class="form-control" style="height: 140px;"></textarea>
+                             <label for="query"> YOUR QUERY HERE ...</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button  type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+
                     </form>
                 </div>
             </div>
